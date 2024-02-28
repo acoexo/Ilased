@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/CSS/reproductor.css">
+  <link rel="stylesheet" href="/src/CSS/normalize.css">
+    <link rel="stylesheet" href="/src/CSS/styles.css">
+    <script src="https://kit.fontawesome.com/dc50205b79.js" crossorigin="anonymous"></script>
+
+  <title>Reproductor de Video/Audio</title>
+</head>
+<body>
+<div class="imgbg">
+        <section class="header">
+            <div class="part--a">
+                <div class="logo-c">
+                    <div class="logo" >
+                        <a href="/REDIRECTIONS/main_page.html"><img id="logo" class="nav--bar__logo" src="/src/SVG/ILASED_LOGO2.svg" alt="LOGO" width="100px" ></a>
+                    </div>
+                </div>
+                <div class="page">SOBRE NOSOTROS</div>
+                <div class="header--contact">
+                    <h1>CONTÁCTANOS</h1>
+                    <a href="/REDIRECTIONS/form.html">@mail</a>
+                </div>
+            </div>
+            
+            <div class="menu">
+                <div class="menu--nav">
+                    <nav class="nav--bar">
+                        <a href="/REDIRECTIONS/main_page.html" class="nav--bar__item">INICIO</a>
+                        <a href="/REDIRECTIONS/services.html" class="nav--bar__item">SERVICIOS</a>
+                        <a href="/REDIRECTIONS/wwu.html" class="nav--bar__item">TRABAJA CON NOSOTROS</a>
+                        <a href="/REDIRECTIONS/about.html" class="nav--bar__item">SOBRE NOSOTROS</a>
+                    </nav>
+                </div>    
+            </div>
+        </section>
+  <div id="player-container">
+    <video id="video-player" controls>
+      <source src="video.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+    <audio id="audio-player" controls style="display: none;">
+      <source src="audio.mp3" type="audio/mp3">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+    <div>
+      <i class="fa-solid fa-play"onclick="play()"></i>
+      <i class="fa-solid fa-pause"onclick="pause()"></i>
+      <i class="fa-solid fa-stop"onclick="stop()"></i>
+      <i class="fa-solid fa-backward"onclick="backward()"></i>
+      <i class="fa-solid fa-forward"onclick="forward()"></i>
+      <i class="fa-solid fa-backward-step"onclick="goToStart()"></i>
+      <i class="fa-solid fa-forward-step"onclick="goToEnd()"></i>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1" onchange="changeVolume()">
+      <i class="fa-solid fa-expand"onclick="toggleFullScreen()"></i>
+    </div>
+    <div>
+      <progress id="progress-bar" value="0" max="100"></progress>
+    </div>
+    <div>
+      <select id="playlist" onchange="changeMedia()">
+        <option value="/src/vid-aud/vid1.mp4">Video 1</option>
+        <option value="/src/vid-aud/aud1.mp3">Audio 1</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="/src/JS/reproductor.js"></script>
+</body>
+</html>

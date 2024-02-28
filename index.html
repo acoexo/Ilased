@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <style>
+        .color-option {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .selected{
+            border: solid .1px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>¿Aceptas nuestras cookies</h1>
+    <p>Para ello, introduce un nombre de usuario y selecciona tus preferencias de personalización. Si no aceptas, haz clic en el botón sin introducir nada.</p>
+    <div id="cookieform">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" placeholder="Nombre de usuario"  autocomplete="yes"><br><br>
+        <p for="background-color">Color de fondo:</p>
+        <div id="background-color-options">
+            <!-- Aquí se insertarán las opciones de color de fondo -->
+        </div>
+        <br><br>
+        <p for="text-color">Color de texto:</p>
+        <div id="text-color-options">
+            <!-- Aquí se insertarán las opciones de color de texto -->
+        </div>
+        <br><br>
+        <button id="createCookieButton" >¡Listo!</button>
+        <button id="clearSelectionButton">Borrar selección</button>
+    </div>
+
+    <script type="module" src="/src/JS/indexcontroller.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+:root {
+  --gen_bg: #24282e;
+  --nav_txt: #000000;
+  --nav_txt_2:#f1f1f1;
+  --nav_bg: #1a1e23;
+  --font-main: rgb(143, 255, 120);
+  --font-main_2: rgb(255, 253, 162);
+  --fontd: 'Raleway', sans-serif;
+  --logo:linear-gradient(to right, rgb(142, 255, 120), rgb(255, 251, 0));
+  --logo_2:linear-gradient(rgb(142, 255, 120), rgb(255, 251, 0));
+}
+
+#player-container {
+  max-width: 100%;
+  margin: 3rem auto 7rem auto;
+}
+#video-player{
+  max-width: 100%;
+  margin: 1rem auto;
+}
+i{
+  margin: auto .5rem ;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 767px) {
+  #player-container {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  #player-container {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #player-container {
+    max-width: 600px; 
+  }
+}

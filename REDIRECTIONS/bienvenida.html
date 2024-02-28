@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mensaje"></h1>
+    <a id="redi" href="./main_page.html">Inicio</a>
+    <script>
+        const cookieArray = document.cookie.split(';');
+        console.log(cookieArray);
+        
+        let nombre, background, color;
+        for (const cookie of cookieArray) {
+            const [cookieName, cookieValue] = cookie.trim().split('=');
+            if (cookieName === 'Username') {
+                nombre = decodeURIComponent(cookieValue);
+            } else if (cookieName === 'BackgroundColor') {
+                background = decodeURIComponent(cookieValue);
+            } else if (cookieName === 'TextColor') {
+                color = decodeURIComponent(cookieValue);
+            }
+        }
+
+        console.log("Nombre:", nombre);
+        console.log("Color de fondo:", background);
+        console.log("Color de texto:", color);
+        
+        document.body.style.backgroundColor = background;
+        document.getElementById('mensaje').innerHTML = `¡Bienvenid@ ${nombre}!`;
+        document.getElementById('mensaje').style.color = color;
+        document.getElementById('redi').style.color = color;
+    </script>
+</body>
+</html>

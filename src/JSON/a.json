@@ -1,0 +1,73 @@
+{
+  "categories": [
+    {
+      "id":1,
+      "title": "SERVICIOS A PARTICULARES",
+      "distances": [
+        {"label": "0-3km", "value": "Distancia1"},
+        {"label": "4-6km", "value": "Distancia2"},
+        {"label": "7-19km", "value": "Distancia3"},
+        {"label": "20-50km", "value": "Distancia4"},
+        {"label": "+50km", "value": "Distancia5"}
+      ],
+      "services": [
+        {
+          "serviceID":1,
+          "name": "Envío de elementos esenciales",
+          "costs": ["2€", "5,90€", "8,90€", "17,90€", "17,90€+0,50€/km adicional"]
+        },
+        {
+          "serviceID":2,
+          "name": "Envío postal",
+          "costs": ["1,25€", "2,50€", "6,70€", "10,80€", "10,80€+0,70€/km adicional"]
+        }
+      ]
+    },
+    {
+      "id":2,
+      "title": "SERVICIOS A EMPRESAS",
+      "distances": [
+        {"label": "0-3km", "value": "Distancia1"},
+        {"label": "4-6km", "value": "Distancia2"},
+        {"label": "7-19km", "value": "Distancia3"},
+        {"label": "20-50km", "value": "Distancia4"},
+        {"label": "+50km", "value": "Distancia5"}
+      ],
+      "services": [
+        {
+          "serviceID":3,
+          "name": "Distribución de Material de Oficina",
+          "costs": ["2,15€", "6,25€", "9,45€", "19€", "19€+0,50€/km adicional"]
+        },
+        {
+          "serviceID":4,
+          "name": "Suministro de Alimentación Para Hostelería",
+          "costs": ["2,30€", "6,75€", "10,15€", "20,50€", "20,50€+0,50€/km adicional"]
+        }
+      ]
+    },
+    {
+      "id":3,
+      "title": "SERVICIOS HÍBRIDOS",
+      "distances": [
+        {"label": "0-3km", "value": "Distancia1"},
+        {"label": "4-6km", "value": "Distancia2"},
+        {"label": "7-19km", "value": "Distancia3"},
+        {"label": "20-50km", "value": "Distancia4"},
+        {"label": "+50km", "value": "Distancia5"}
+      ],
+      "services": [
+        {
+          "serviceID":5,
+          "name": "Transporte Ganadero",
+          "costs": ["2,72€", "8€", "12,10€", "24,40€", "24,40€+0,50€/km adicional"]
+        },
+        {
+          "serviceID":6,
+          "name": "Transporte de Vehículos de MMA de 3000kg",
+          "costs": ["2,50€", "7,35€", "11,40€", "22,20€", "22,20€+0,50€/km adicional"]
+        }
+      ]
+    }
+  ]
+}

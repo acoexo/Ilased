@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+:root {
+    --gen_bg: #24282e;
+    --nav_txt: #000000;
+    --nav_txt_2:#f1f1f1;
+    --nav_bg: #1a1e23;
+    --font-main: rgb(143, 255, 120);
+    --font-main_2: rgb(255, 253, 162);
+    --fontd: 'Raleway', sans-serif;
+    --logo:linear-gradient(to right, rgb(142, 255, 120), rgb(255, 251, 0));
+    --logo_2:linear-gradient(rgb(142, 255, 120), rgb(255, 251, 0));
+}
+
+
+
+/* INFO */
+.info{
+    background-color: var(--gen_bg);
+    margin: 3rem;
+    color: var(--nav_txt_2);
+    line-height: 2rem;
+}
+.info h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 3rem;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (min-width: 550px) and (max-width: 767px) {
+  .part--a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+   
+@media (min-width: 767px) and (max-width: 1000px) {
+  .part--a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .part--a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+   
+   

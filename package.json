@@ -1,0 +1,16 @@
+{
+  "name": "ilased",
+  "version": "1.0.0",
+  "description": "proyecto de plan de empresa",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "acoexo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jquery": "^3.7.1"
+  }
+}
