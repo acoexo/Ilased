@@ -30,7 +30,7 @@ class CookieManager {
     }
 
     redirect() {
-        window.location.href = '/REDIRECTIONS/bienvenida.php';
+        window.location.href = '/REDIRECTIONS/bienvenida.html';
     }
 
     savePreferences() {
